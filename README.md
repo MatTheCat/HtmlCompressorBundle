@@ -2,12 +2,40 @@ HtmlCompressorBundle
 ====================
 Allow to minify cacheable HTML and XML responses using [htmlcompressor](https://code.google.com/p/htmlcompressor/).
 
-Installation
-------------
-Wait for it!
+## Installation
 
-Configuration
--------------
+### Get the bundle
+
+Add this line in your composer.json **require** section:
+
+``` json
+    "matthecat/htmlcompressor-bundle": "dev-master"
+```
+
+and run this command in your project directory:
+
+``` bash
+$ php composer.phar update matthecat/htmlcompressor-bundle
+```
+
+### Enable the bundle
+
+Edit your application's kernel:
+``` php
+<?php
+// app/AppKernel.php
+
+public function registerBundles()
+{
+    $bundles = array(
+        // ...
+        new MatTheCat\BackOfficeBundle\MatTheCatBackOfficeBundle(),
+    );
+}
+```
+
+## Configuration
+
     # app/config/config.yml
     html_compressor:
         enabled: true
