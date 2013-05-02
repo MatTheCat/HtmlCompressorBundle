@@ -10,4 +10,4 @@ services:
             - '%html_compressor.htmlcompressor.bin%'
             - '%html_compressor.htmlcompressor.options%'
         tags:
-            - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse, priority: %html_compressor.response_handler.event.priority% }
+            - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse, priority: '%html_compressor.response_handler.event.priority%' }
