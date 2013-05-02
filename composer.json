@@ -1,0 +1,33 @@
+{
+    "name": "MatTheCat/HtmlCompressorBundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 bundle which allow to minify cacheable HTML and XML responses using htmlcompressor",
+    "keywords": ["matthecat", "xml", "html", "compressor", "minify"],
+    "homepage": "https://github.com/MatTheCat/HtmlCompressorBundle",
+    "license": "MIT",
+    "repositories":[
+        {
+            "type":"git",
+            "url":"git://github.com/MatTheCat/HtmlCompressorBundle.git"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Mathieu Lechat",
+            "email": "math.lechat@gmail.com",
+            "homepage": "http://matthecat.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "symfony/symfony": "2.*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "MatTheCat\\HtmlCompressorBundle": ""
+        }
+    },
+    "target-dir": "MatTheCat/HtmlCompressorBundle"
+}
