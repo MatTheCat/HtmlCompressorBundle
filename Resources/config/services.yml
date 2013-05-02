@@ -1,0 +1,13 @@
+parameters:
+    html_compressor.response_handler.class: MatTheCat\HtmlCompressorBundle\EventListener\ResponseListener
+    html_compressor.response_handler.event.priority: -255
+
+services:
+    html_compressor.response_handler:
+        class: '%html_compressor.response_handler.class%'
+        arguments:
+            - '%html_compressor.java.bin%'
+            - '%html_compressor.htmlcompressor.bin%'
+            - '%html_compressor.htmlcompressor.options%'
+        tags:
+            - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse, priority: %html_compressor.response_handler.event.priority% }
