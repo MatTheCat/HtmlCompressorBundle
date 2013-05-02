@@ -1,5 +1,5 @@
 {
-    "name": "MatTheCat/HtmlCompressorBundle",
+    "name": "matthecat/htmlcompressor-bundle",
     "type": "symfony-bundle",
     "description": "Symfony2 bundle which allow to minify cacheable HTML and XML responses using htmlcompressor",
     "keywords": ["matthecat", "xml", "html", "compressor", "minify"],
