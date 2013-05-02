@@ -9,7 +9,7 @@ Allow to minify cacheable HTML and XML responses using [htmlcompressor](https://
 Add this line in your composer.json **require** section:
 
 ``` json
-    "matthecat/htmlcompressor-bundle": "dev-master"
+"matthecat/htmlcompressor-bundle": "dev-master"
 ```
 
 and run this command in your project directory:
@@ -33,6 +33,7 @@ public function registerBundles()
     );
 }
 ```
+Now, it's time to configure it!
 
 ## Configuration
 
