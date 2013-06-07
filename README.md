@@ -29,7 +29,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new MatTheCat\BackOfficeBundle\MatTheCatBackOfficeBundle(),
+        new MatTheCat\HtmlCompressorBundle\MatTheCatHtmlCompressorBundle(),
     );
 }
 ```
