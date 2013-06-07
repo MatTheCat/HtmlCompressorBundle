@@ -21,13 +21,9 @@ class ResponseListener
 
     public function onKernelResponse(FilterResponseEvent $event) {
         $response = $event->getResponse();
-        $contentType = $response->headers->get('Content-type');
         if(
             !$response->isCacheable() ||
-            in_array(
-                substr($contentType, strrpos($contentType, '/')+1),
-                array('xml', 'html')
-            )
+            !preg_match('#[a-z]+/(?:html|xml)(?:;|$)#', $response->headers->get('Content-type'))
         ) {
             return;
         }
